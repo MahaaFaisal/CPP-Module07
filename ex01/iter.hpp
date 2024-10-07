@@ -1,15 +1,14 @@
 #ifndef __WHATEVER_HPP__
 # define __WHATEVER_HPP__
 
-// this one should take a reference
 template <typename T>
-void	print(T temp)
+void	print(const T &temp)
 {
 	std::cout << temp << " ";
 }
 
 template <typename T>
-void	iter(T array[], int arrLength, void(*print)(T))
+void	iter(T array[], const int arrLength, void(*print)(const T &))
 {
 	for (int i = 0; i < arrLength; i++)
 		print(array[i]);

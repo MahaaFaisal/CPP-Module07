@@ -22,7 +22,7 @@ int main()
 	std::string strArr[3] = {"printed ", "with ", "love "};
 	Awesome tab2[5];
 
-	iter( tab, 5, print<const int> );
+	iter( tab, 5, print< int> );
 	iter( strArr, 3, print<std::string> );
 	iter( tab2, 5, print<Awesome> );
 
