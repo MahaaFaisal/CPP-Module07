@@ -1,7 +1,7 @@
 
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = main.cpp
+SRCS = main.cpp Utils.cpp
 NAME = array
 
 all: $(NAME)
