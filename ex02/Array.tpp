@@ -40,7 +40,7 @@ template <class T>
 T &Array<T>::operator[](int index)
 {
 	if (index < 0 || index >= _n)
-		throw(std::out_of_range("indexOutfRange"));
+		throw(std::out_of_range("indexOutOfRange"));
 	return (_array[index]);
 }
 
