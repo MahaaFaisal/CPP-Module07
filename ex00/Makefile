@@ -1,7 +1,7 @@
 
 CPP = c++
 CPPFLAGS = -Wall -Wextra -Werror
-SRCS = main.cpp
+SRCS = main.cpp Utils.cpp
 NAME = whatever
 
 all: $(NAME)
