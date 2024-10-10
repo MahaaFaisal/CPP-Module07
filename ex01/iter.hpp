@@ -8,7 +8,7 @@ void	print(const T &temp)
 }
 
 template <typename T>
-void	iter(T array[], const int arrLength, void(*print)(const T &))
+void	iter(T *array, const int arrLength, void(*print)(const T &))
 {
 	for (int i = 0; i < arrLength; i++)
 		print(array[i]);

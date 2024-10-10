@@ -5,6 +5,9 @@ class Awesome
 {
   public:
     Awesome( void ) : _n( 42 ) { return; }
+    Awesome( Awesome &other ) : _n( other._n ) { return; }
+    Awesome operator=( Awesome &rhs ){ _n = rhs._n; return *this; }
+    ~Awesome(){ }
     int get( void ) const { return this->_n; }
   private:
     int _n;
