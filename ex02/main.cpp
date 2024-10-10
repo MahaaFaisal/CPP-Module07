@@ -26,7 +26,7 @@ int main(int, char**)
     Utils::printMsg("--- string array ---\n", "green");
     Array<std::string> newStrings(MAX_VAL);
     for (int i = 0; i < MAX_VAL; i++)
-        newStrings[i] = "12345678" + i;
+        newStrings[i] = "12345678";
     for (int i = 0; i < MAX_VAL; i++)
         std::cout << newStrings[i] << ' ';
     std::cout << "\n\n";
