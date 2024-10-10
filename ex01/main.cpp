@@ -1,5 +1,6 @@
 #include <iostream>
 #include "iter.hpp"
+#include "Utils.hpp"
 
 class Awesome
 {
@@ -25,8 +26,13 @@ int main()
 	std::string strArr[3] = {"printed ", "with ", "love "};
 	Awesome tab2[5];
 
+	Utils::printMsg ("--- iter on integers tab ---\n", "green");
 	iter( tab, 5, print< int> );
+
+	Utils::printMsg ("--- iter on strings tab ---\n", "green");
 	iter( strArr, 3, print<std::string> );
+
+	Utils::printMsg ("--- iter on class objects tab ---\n", "green");
 	iter( tab2, 5, print<Awesome> );
 
 	return 0;
